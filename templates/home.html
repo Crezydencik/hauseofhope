@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}
+houseofhope
+{% endblock %}
+{% block body%}
+<div class="container">
+  <!-- slider -->
+    <div class="afterbutton">
+      <div class="slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="photoslide" src="static/img/slider/1.jpg" ></div>
+            <div class="swiper-slide"><img class="photoslide" src="static/img/slider/1.jpg" ></div>
+            <div class="swiper-slide"><img class="photoslide" src="static/img/slider/1.jpg" ></div>
+          </div>
+          <!-- Add  Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Arrows -->
+          <!-- <div class="slider-arrows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div> -->
+        </div>
+        <!-- Swiper js -->
+        <script type="text/javascript" src="../static/js/swiper.min.js"></script>
+        <script type="text/javascript" src="../static/js/slider.js"></script>
+      </div>
+    </div>
+    <!-- slider end -->
+      <h1 class="titleblock">House of hope</h1>
+      <div class="textcontent">
+        <div class="contentleft">
+          <p>FOR YOUTH AND FAMILIES TO RENEW THEIR HOPE AND TRANSFORM THEIR LIVES. OUR DREAM IS TO BECOME A PLATFORM FOR FAMILIES, KIDS AND YOUTH AT RISK TO HELP THEM BREAK THE CYCLE OF POVERTY, SOCIAL DISCRIMINATION, AND LACK OF EDUCATION.</p>
+        </div>
+        <div class="contentright">
+          <img src="static/img/fotopagehome1.jpg" class="blockfoto">
+      </div>
+    </div>
+</div>
+<div class="videoblock">
+  <iframe src="https://www.youtube.com/embed/kVJuDAJKzbs" frameborder="0" allow="acceleromete; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- <video src="htt" poster="static/img/videohomepage.jpg">
+  </video> -->
+</div>
+<div class="container">
+  <h1 class="titleblock">Our needs</h1>
+  <div class="textcontent">
+    <div class="contentright">
+      <img src="static/img/houseofhopeneeds.png">
+    </div>
+      <div class="donationneeds">
+        <div class="needs">
+        <p>
+          REG.NR. 40008180946 <br>
+          ADDRESS: RĪGAS 67, LIEPĀJA, <br>
+          LV3401, LATVIA <br> <br>
+          SEB BANK ACCOUNT:<br>
+          LV26UNLA0050017389379 <br>
+          SWIFT CODE: UNLALV2X <br>
+          ADDRESS OF BANK: <br>
+          BAZNĪCAS STREET 4/6,  <br>
+          LIEPĀJA, LV-3401, LATVIA
+       </p>
+       <div class="donateclick">
+        <div class="clickdon">
+          <input type="button" class="donate" value="Donete"/>
+          <img src="static/img/pay.png">
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+    <h1 class="titleblock">Media about us</h1>
+</div>
+{% endblock %}

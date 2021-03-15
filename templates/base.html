@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css html -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/whoweare.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hope21.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/activity.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacts.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css')}}">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <script src="../static/js/js.js"></script>
+    <script src="https://kit.fontawesome.com/32bd7f4fd3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://bootstraptema.ru/_sf/7/729.css">
+    <title>{% block title%}{% endblock %}</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/home"> <img class=" roff" src="static/img/Roof.png"></a>
+          <!-- <img class="logo" src="../static/img/Logo.png"> -->
+        <div class="nav_button">
+          <div class="">
+
+          </div>
+          <div class="nav">
+            <a href="/Whoweare" class="nav_link"> Whu we are</a>
+            <a href="/Hope21" class="nav_link hope"> Hope 21</a>
+            <a href="/Gallery" class="nav_link gallery"> Gallery</a>
+            <a href="/Activity" class="nav_link"> Activity</a>
+            <a href="/Contacts" class="nav_link cont"> Contacs</a>
+          </div>
+              <div class="language">
+                  <!-- <button onclick="myFuncti.on()" class="mob-sub-lang"></button> -->
+                  <button onclick="myFunction()" class="sub_lang">
+                     <i class="fas fa-globe-americas fa-2x"></i> ENG <i class="fas fa-sort-down "></i></button>
+                  <div id="myDropdown" class="lang_menu">
+                      <a href="../lv.html"><i class="flag-icon flag-icon-lv"></i>Latvia</a>
+                      <!-- <a href="#about"><i class="flag-icon flag-icon-gb"></i>English</a> -->
+                  </div>
+              </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      {% block body %}{% endblock %}
+    </div>
+    <footer class="footer">
+      <div class="container ">
+        <div class="footer_container">
+          <div class="footerbloc">
+            <div class="foot_logo">
+                <img src="../static/img/Logo.png">
+            </div>
+          </div>
+          <div class="footerbloc">
+            <h2 class="foo_line"></h2>
+            <h1>Donation</h1>
+            <p> HOUSE OF HOPE <br>
+                Reg.no. 40008180946 <br>
+                SEB BANKA <br>
+                Bank account: LV26UNLA0050017389379, <br>
+                SWIFT code: UNLALV2X <br>
+
+          </div>
+          <div class="footerbloc">
+            <h2 class="foo_line"></h2>
+            <h1>Navigation</h1>
+            <div class="footer_nav">
+                <div class="footer_left">
+                    <a href="/Hope21" class="footer_nav_link">Hope21</a>
+                    <a href="/Whoweare" class="footer_nav_link">Whu we <br>are </a>
+                    <a href="/Gallery" class="footer_nav_link">Gallery</a>
+                </div>
+                <div class="footer_right">
+                  <a href="/Activity" class="footer_nav_link">Activity</a>
+                  <!-- <a href="#" class="footer_nav_link">Social <br> uznemums</a> -->
+                  <a href="/Contacts" class="footer_nav_link">Contacs</a>
+                </div>
+              </div>
+            </div>
+          <div class="footerbloc">
+            <h2 class="foo_line"></h2>
+            <h1>Contacs</h1>
+            <div class="footer_cont">
+              <a href="mailto:houseofhope.lv@gmail.com" class="footcontact"><i class="fas fa-envelope"></i>houseofhope.lv@gmail.com</a>
+              <a href=""  class="footcontact"><i class="fas fa-map-marker-alt"></i>Rīgas 67,  Liepāja LV3401, LATVIA</a>
+              <a href="tel:+371 29897601" class="footcontact"><i class="fas fa-phone-alt"></i>+371 29897601</a>
+            </div>
+          </div>
+        </div>
+          <p class="footerline"></p>
+          <p class="footercopy">&copy; houseofhope:2021</p>
+      </div>
+      </div>
+
+    </footer>
+
+</body>
+
+</html>

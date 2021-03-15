@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+{% block body%}
+<div class="container">
+  <div class="afterbutton">
+    <img src="static/img/contacts.png">
+  </div>
+  <div class="textcontent">
+    <div class="contentleft">
+      <h1 class="titleblock_left"> Contacts</h1>
+        <div class="contacts-info">
+          <i class="fas fa-map-marker-alt"><a href="#">Rīgas 67, Liepāja LV3401, LATVIA</a></i>
+          <i class="fas fa-envelope-open-text"> <a href="mailto:houseofhope.lv@gmail.com">houseofhope.lv@gmail.com</a></i>
+          <i class="fa fa-phone"> <a href="tel: +37129897601"> +371 29897601</a></i> <br>
+        </div>
+      <h1 class="titleblock_left"> Social media</h1>
+        <div class="contacts-info">
+          <i class="fab fa-facebook"> <a href="https://www.facebook.com/KarostaKids" target="_blank">houseofhope_lv</a></i>
+          <i class="fab fa-instagram"> <a href="https://www.instagram.com/houseofhope_lv/" target="_blank" >houseofhope_lv</a></i>
+        </div>
+    </div>
+    <div class="contentright">
+      <h1 class="titleblock_left">Get in  touch</h1>
+        <div class="returncallform">
+          <div class="callforminput">
+            <div class="headinput">
+              <div class="group">
+                 <input type="text" name="youname" id="youname" required>
+                 <span class="bar"></span>
+                 <label>Your Name</label>
+              </div>
+              <div class="group">
+                 <input type="text" name="email" id="email" required>
+                 <span class="bar"></span>
+                 <label>Email</label>
+              </div>
+            </div>
+            <div class="callformcontent">
+              <div class="group">
+                 <input type="text" name="email" id="subject" required>
+                 <span class="bar"></span>
+                 <label>Subject</label>
+              </div>
+              <div class="group message">
+                 <textarea  name="email" id="message"  class="messageinput" required></textarea>
+                 <span class="bar"></span>
+                 <label>Message</label>
+              </div>
+            </div>
+            <a href="#" class="submit-form" id="submit-form"/>Submit</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+  <script>(function () {
+        var setting = {"height":538,"width":1200,"zoom":18,"queryString":"Rīgas iela 67, Liepāja, LV-3401, Латвия","place_id":"Ei9SxKtnYXMgaWVsYSA2NywgTGllcMSBamEsIExWLTM0MDEsINCb0LDRgtCy0LjRjyJQEk4KNAoyCbuEaTw6pvpGEVkIhfOorb4eGh4LEO7B7qEBGhQKEgkr8HT7Gab6RhHgXI1_0M8AHAwQQyoUChIJAWXQYzym-kYRPYKs0PVM-EU","satellite":false,"centerCoord":[56.52357057401399,21.01683205000001],"cid":"0x59e7f14704737b3b","lang":"ru","cityUrl":"/latvia/liepaja-32892","cityAnchorText":"Карта [CITY1], Latvia, Латвия","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"423513"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=423513';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();
+    </script><a href="https://1map.com/ru/map-embed">1 Map</a>
+  </div> -->
+</div>
+<div class="map-google">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2200.754750475279!2d21.014330815522705!3d56.52365083974302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46faa63a2482465b%3A0x3ff86f46a67cf138!2zUsSrZ2FzIGllbGEgNjcsIExpZXDEgWphLCBMVi0zNDAx!5e0!3m2!1sru!2slv!4v1615549217556!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+{% endblock %}

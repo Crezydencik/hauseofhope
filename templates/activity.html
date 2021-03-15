@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+{% block body%}
+<div class="afterbutton">
+  <img src="static/img/activity/afterbuttonimg.png">
+</div>
+<div class="container">
+  <h1 class="titleblock_left">Whu we are</h1>
+  <div class="textcontent">
+    <div class="contentleft">
+      <p>Text</p>
+    </div>
+    <div class="contentright">
+      <img src="static/img/activity/img1.png" class="blockfoto">
+    </div>
+  </div>
+  <!-- <div class="blockstabs">
+    <div class="tabs">
+      <div class="tabs-triger">
+        <a href="#tabs3" class="tabs-trigger-items"><img src="static/img/activity/mamclub.png" class="tab-image"><br><h1>HISTORY & AWARDS</h1></a>
+        <a href="#tabs2" class="tabs-trigger-items"><img src="static/img/activity/activity.png" class="tab-image"><br><h1>PARTNERS & SUPPORTERS</h1></a>
+        <a href="#tabs4" class="tabs-trigger-items"><img src="static/img/activity/creativityweek.png" class="tab-image"><br><h1>TEAMS</h1></a>
+      </div>
+      <div class="tabs-content">
+        <div id="tabs2" class="tabs-content-items">Content2</div>
+        <div id="tabs3" class="tabs-content-items">Content3</div>
+        <div id="tabs4" class="tabs-content-items">Content4</div>
+      </div>
+    </div>
+  </div> -->
+  <div class="wrapper">
+  <div class="tabs">
+    <div class="tabs__nav tabs-nav">
+      <div class="tabs-nav__item is-active" data-tab-name="tab-1"><img src="static/img/activity/mamclub.png" class="tab-image"><h1>Mom club</h1></div>
+      <div class="tabs-nav__item" data-tab-name="tab-2"><img src="static/img/activity/activity.png" class="tab-image"><h1>Activity</h1></div>
+      <div class="tabs-nav__item" data-tab-name="tab-3"><img src="static/img/activity/creativityweek.png" class="tab-image"> <h1>Creativity week</h1> </div>
+    </div>
+    <div class="tabs__content">
+      <div class="tab is-active tab-1"> Содержание таба 1</div>
+      <div class="tab tab-2">Содержание таба 2</div>
+      <div class="tab tab-3">Содержание таба 3</div>
+    </div>
+  </div>
+</div>
+  <script src="static/js/tabs.js"></script>
+</div>
+{% endblock %}
